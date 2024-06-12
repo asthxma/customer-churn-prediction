@@ -3,3 +3,5 @@ streamlit
 streamlit-extras
 joblib==1.4.2
 scikit-learn==1.2.2
+streamlit-authenticator==0.1.5
+streamlit_js_eval

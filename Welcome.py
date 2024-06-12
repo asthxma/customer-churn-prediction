@@ -10,7 +10,16 @@ st.set_page_config(
     page_icon=':money_with_wings:',
     layout="wide",
 )
+#st.sidebar.success("Silahkan memilih laman yang ingin dituju.")
 
+try:
+    if st.session_state["authentication_status"]:
+        st.sidebar.success(f'Welcome *{st.session_state["name"]}*!')
+        st.sidebar.success('Select a Page')
+    else:
+        st.sidebar.success('Please Login to Access Pages')
+except:
+    st.sidebar.success('Please Login to Access Pages')
 
 st.write("# Bank Customer Churn Prediction :sob:")
     
