@@ -39,3 +39,6 @@ if authentication_status:
     st.write('<i> What dataset is being utilized?</i>', unsafe_allow_html=True)
     df = pd.read_csv('dataset/base_dataset.csv')
     st.write(df)
+
+    df2 = pd.read_csv('dataset/modified_data.csv')
+    st.write(df2)
