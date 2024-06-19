@@ -8,7 +8,7 @@ import streamlit as st
 import streamlit_authenticator as stauth 
 
 st.set_page_config(
-    page_title="Dota 2 GA - Dataset",
+    page_title="Customer Data",
     page_icon='📩',
     layout="wide",
 )
@@ -42,3 +42,12 @@ if authentication_status:
 
     df2 = pd.read_csv('dataset/modified_data.csv')
     st.write(df2)
+
+try:
+    if st.session_state["authentication_status"]:
+        st.sidebar.success(f'You are logged in as **{st.session_state["name"]}**.')
+        st.sidebar.success('Select a Page')
+    else:
+        st.sidebar.success('Please Login to Access Pages')
+except:
+    st.sidebar.success('Please Login to Access Pages')
