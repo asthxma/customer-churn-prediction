@@ -54,7 +54,7 @@ if authentication_status:
         st.write("")
 
     st.subheader("Churn Prediction", divider='blue')
-    rf_loaded = joblib.load("random_forest.pkl")
+    rf_loaded = joblib.load("gboost2.pkl")
 
     # Make a prediction
     if st.button('Predict'):
