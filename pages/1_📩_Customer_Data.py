@@ -1,12 +1,17 @@
 import pickle
 from pathlib import Path
-
-import streamlit as st  # pip install streamlit
+import pandas as pd
+from PIL import Image
+from streamlit_extras.switch_page_button import switch_page 
+from streamlit.components.v1 import html
+import streamlit as st
 import streamlit_authenticator as stauth 
 
-st.set_page_config(page_title="Admin", page_icon="🔐")
-st.markdown("# Admin")
-st.sidebar.header("Admin")
+st.set_page_config(
+    page_title="Dota 2 GA - Dataset",
+    page_icon='📩',
+    layout="wide",
+)
 
 names = ["Administrator"]
 usernames = ["admin"]
@@ -30,6 +35,7 @@ if authentication_status == None:
 if authentication_status:
     st.session_state['user_authenticated'] = True
     authenticator.logout("Logout", "sidebar")
-    st.write("""
-             ## Laman Admin     
-             """)
+    st.write("# Dataset")
+    st.write('<i> What dataset is being utilized?</i>', unsafe_allow_html=True)
+    df = pd.read_csv('dataset/base_dataset.csv')
+    st.write(df)
