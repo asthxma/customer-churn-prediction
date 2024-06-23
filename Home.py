@@ -1,8 +1,10 @@
-import streamlit as st
 from PIL import Image
 import numpy as np
+
+import streamlit as st
 from streamlit_extras.switch_page_button import switch_page 
 from streamlit.components.v1 import html
+
 
 st.set_page_config(
     page_title="Churn Predition",
