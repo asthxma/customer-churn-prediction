@@ -61,7 +61,7 @@ if authentication_status:
         st.write("")
 
     st.subheader("Churn Prediction", divider='blue')
-    modelpred = joblib.load("random_forest.pkl")
+    modelpred = joblib.load("model.pkl")
 
     # Predict
     if st.button('Predict'):
