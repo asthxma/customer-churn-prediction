@@ -36,10 +36,20 @@ if authentication_status == None:
 if authentication_status:
     st.session_state['user_authenticated'] = True
     st.write("# Dataset")
-    st.write('<i> What dataset is being utilized?</i>', unsafe_allow_html=True)
+    st.write('What dataset is being utilized?', unsafe_allow_html=True)
+    st.write('The dataset used to analyse customer churn in the banking industry is taken from kaggle')
+    st.write('Information about bank customers that includes various demographic, financial, and activity features.\
+              these features are used to predict whether a customer will churn or retain')
     df = pd.read_csv('dataset/base_dataset.csv')
     st.write(df)
 
+    #if authentication_status:
+    #st.session_state['user_authenticated'] = True
+    #st.write("# Dataset")
+    st.write('Dataset has been processed by removing irrelevant columns, converting categorical features to numeric,\
+              standardising feature, and selecting significant features using ANOVA and Mutual Information, \
+              resulting in high-quality data that is ready to be used to train machine learning \
+              models to accurately predict customer churn ', unsafe_allow_html=True)
     df2 = pd.read_csv('dataset/modified_data.csv')
     st.write(df2)
 
