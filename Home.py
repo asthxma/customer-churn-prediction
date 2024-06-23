@@ -21,15 +21,52 @@ try:
 except:
     st.sidebar.success('Please Login to Access Pages')
 
-st.write("# Bank Customer Churn Prediction")
-    
-st.subheader('Customer Retention: A Crucial Aspect for Banking Sustainability and Growth', divider='blue')
-st.write("Customer retention is a critical aspect for the sustainability and growth of banks. Loyal customers \
-         provide a stable and more predictable source of revenue compared to new customers who may not be as loyal. \
-         Additionally, the cost of acquiring new customers is significantly higher than the cost of retaining existing ones. \
-         Therefore, focusing on customer retention can offer significant competitive advantages.")
+st.write("# Welcome to Your Simple Solution for Banking Insights!")
 
-st.write("A high churn rate, or customer turnover, is an indication of issues within the service, products, or customer relationships. \
-        This can be detrimental to a bank in the long run, as losing customers can potentially decrease revenue and increase operational costs.\
-        The main causes of churn can include customer dissatisfaction, poor service, uncompetitive products, or more attractive offers \
-        from competitors.")
+st.subheader('Unlock the Power of Prediction with Ease', divider='rainbow')
+st.write("At our platform, we simplify the way you understand your customers. Our user-friendly interface \
+         allows bank administrators to effortlessly input customer details and generate accurate predictions about \
+         customer behaviors, needs, and trends. No complex integrations or technical expertise required.")
+image = Image.open('bank.jpg')
+st.image(image, caption='Visualizing Customer Churn in Banking (Credit: Pijar Foundation)')
+
+st.subheader('Why Choose Us?', divider='violet')
+st.markdown(
+"""
+- Simplicity: Easily add customer details and get instant predictions without any technical hassle.
+- Accuracy: Our advanced machine learning models ensure precise and reliable insights.
+- Actionable Insights: Make informed decisions to enhance customer satisfaction and drive growth.
+"""
+)
+
+st.subheader('Features', divider='blue')
+st.markdown(
+"""
+- Easy Customer Data Entry \n
+Admins can quickly log in and input customer information through a straightforward interface.
+- Instant Predictions \n
+Generate immediate predictions about customer behavior, risk of churn, and potential value.
+- Personalized Insights \n
+Receive tailored recommendations on how to best engage with each customer.
+"""
+)
+
+st.subheader('How It Works', divider='green')
+st.markdown(
+"""
+1. Log In \n
+Access your secure admin dashboard with ease.\n
+2. Add Customer Details\n
+Enter customer information using our simple, intuitive form.\n
+3. Generate Predictions \n
+Click to generate instant, actionable insights about your customers.
+"""
+)
+
+st.write("# Get Started!")
+data_customer = st.button("Dataset")
+if data_customer:
+    switch_page("Customer_Data")
+churn_pred = st.button("Churn Prediction")
+if churn_pred:
+    switch_page("Churn_Prediction")
