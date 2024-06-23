@@ -21,5 +21,13 @@ except:
 
 st.write("# Bank Customer Churn Prediction :sob:")
     
-st.subheader('What is Dota 2?', divider='rainbow')
-st.write("penjelasan mengenai blablablbala")
+st.subheader('Customer Retention: A Crucial Aspect for Banking Sustainability and Growth', divider='black')
+st.write("Customer retention is a critical aspect for the sustainability and growth of banks. Loyal customers \
+         provide a stable and more predictable source of revenue compared to new customers who may not be as loyal. \
+         Additionally, the cost of acquiring new customers is significantly higher than the cost of retaining existing ones. \
+         Therefore, focusing on customer retention can offer significant competitive advantages.")
+
+st.write("A high churn rate, or customer turnover, is an indication of issues within the service, products, or customer relationships. \
+        This can be detrimental to a bank in the long run, as losing customers can potentially decrease revenue and increase operational costs.\
+        The main causes of churn can include customer dissatisfaction, poor service, uncompetitive products, or more attractive offers \
+        from competitors.")
