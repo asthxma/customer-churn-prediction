@@ -21,9 +21,9 @@ try:
 except:
     st.sidebar.success('Please Login to Access Pages')
 
-st.write("# Bank Customer Churn Prediction :sob:")
+st.write("# Bank Customer Churn Prediction")
     
-st.subheader('Customer Retention: A Crucial Aspect for Banking Sustainability and Growth', divider='black')
+st.subheader('Customer Retention: A Crucial Aspect for Banking Sustainability and Growth', divider='blue')
 st.write("Customer retention is a critical aspect for the sustainability and growth of banks. Loyal customers \
          provide a stable and more predictable source of revenue compared to new customers who may not be as loyal. \
          Additionally, the cost of acquiring new customers is significantly higher than the cost of retaining existing ones. \
