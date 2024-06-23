@@ -36,7 +36,7 @@ if authentication_status == None:
 if authentication_status:
     st.session_state['user_authenticated'] = True
     st.write("# Dataset")
-    st.write('What dataset is being utilized?', unsafe_allow_html=True)
+    st.write('<i> What dataset is being utilized? </i>', unsafe_allow_html=True)
 
     st.subheader('Base Dataset', divider='rainbow')
     st.write('Information about bank customers that includes various demographic, financial, and activity features.\

@@ -54,13 +54,13 @@ Receive tailored recommendations on how to best engage with each customer.
 st.subheader('How It Works', divider='green')
 st.markdown(
 """
-1. Log In \n
+<b>1. Log In</b> \n
 Access your secure admin dashboard with ease.\n
 2. Add Customer Details\n
 Enter customer information using our simple, intuitive form.\n
 3. Generate Predictions \n
 Click to generate instant, actionable insights about your customers.
-"""
+""", unsafe_allow_html=False
 )
 
 st.write("# Get Started!")
