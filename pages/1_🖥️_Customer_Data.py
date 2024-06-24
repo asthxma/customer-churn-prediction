@@ -40,13 +40,13 @@ if authentication_status:
 
     st.subheader('Base Dataset', divider='rainbow')
     st.write('Information about bank customers that includes various demographic, financial, and activity features.\
-              these features are used to predict whether a customer will churn or retain')
+              These features are used to predict whether a customer will churn or retain.')
     df = pd.read_csv('dataset/base_dataset.csv')
     st.write(df)
 
     st.subheader('Processed Dataset', divider='violet')
     st.write('Dataset has been processed by removing irrelevant columns, converting categorical features to numeric,\
-              standardising feature, and selecting significant features using ANOVA and Mutual Information, \
+              feature scaling, and selecting significant features using ANOVA and Mutual Information, \
               resulting in high-quality data that is ready to be used to train machine learning \
               models to accurately predict customer churn.', unsafe_allow_html=True)
     df2 = pd.read_csv('dataset/modified_data.csv')
