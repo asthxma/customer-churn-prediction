@@ -54,7 +54,7 @@ if authentication_status:
         Country = st.radio("Specify the customer's country of residence",["France","Germany", "Spain"],index=None)
         CreditScore = st.number_input("Input the customer's credit score",value=None, placeholder="Ex: 670")
         Balance = st.number_input("Enter the customer's account balance (in $)",value=None, placeholder="Ex: 30000")
-        Salary = st.number_input("Enter the customer's yearly salary (in $)",value=None, placeholder="Ex: 40000")
+        Salary = st.number_input("Enter the customer's estimated salary (in $)",value=None, placeholder="Ex: 40000")
         IsActiveMember = st.radio("Is the customer an active bank member?",["Yes", "No"],index=None)
         NumOfProducts = st.number_input("How many of the bank's products is the customer using?",value=None, placeholder="Ex: 3")
     with col2:
